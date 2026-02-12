@@ -15,7 +15,7 @@ def find_min(numbers):
 def find_average(numbers):
     """Find the average of a list of numbers int the list 'numbers' and return 
     it as a float to one decimal point"""
-    pass
+    return round(sum(numbers)/len(numbers),2)
 
 def find_even_pairs(numbers):
     """Find the neigbouring pairs of numbers that sum up to an even number and 
