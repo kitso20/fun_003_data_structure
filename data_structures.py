@@ -2,15 +2,15 @@ import random
 
 def generate_random_list(length):
     """Generate a list of random numbers of a given length"""
-    pass
+    return [n for n in random.choices(range(length*10),k=length)]
 
 def find_max(numbers):
     """Find the largest(maximum) number in a list of numbers"""
-    pass
+    return max(numbers)
 
 def find_min(numbers):
     """Find the smallest(minimum) number in a list of numbers"""
-    pass
+    return min(numbers)
 
 def find_average(numbers):
     """Find the average of a list of numbers int the list 'numbers' and return 
