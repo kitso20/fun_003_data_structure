@@ -49,7 +49,7 @@ def find_even_numbers(numbers):
 def find_odd_numbers(numbers):
     """Find the odd numbers in the list 'numbers' and return them in
     in a tuple"""
-    pass
+    return tuple(n for n in numbers if n % 2 != 0)
 
 def return_list_stats(numbers):
     """Given the list 'numbers', use the relevant functions to return a
