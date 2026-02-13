@@ -39,7 +39,7 @@ def find_number_of_even_numbers(numbers):
 def find_number_of_odd_numbers(numbers):
     """Find the total number of odd numbers in the list 'numbers' and return 
     the number as an integer"""
-    pass
+    return len(list(n for n in numbers if n % 2 != 0))
 
 def find_even_numbers(numbers):
     """Find the even numbers in the list 'numbers' and return them in
