@@ -72,7 +72,16 @@ def return_list_stats(numbers):
             number_of_odd_numbers : the total number of even numbers in the list
                  'numbers'
     """
-    pass
+    return {"unique_numbers": set(numbers),
+    "min": min(numbers),
+    "max": max(numbers),
+    "average": round(sum(numbers)/len(numbers),1),
+    "even_pairs": [(n,n+1) for n in range(len(numbers)-1) if (numbers[n] + numbers[n+1]) % 2 == 0],
+    "odd_pairs": [(n,n+1) for n in range(len(numbers)-1) if (numbers[n] + numbers[n+1]) % 2 != 0],
+    "even_numbers": tuple(n for n in numbers if n % 2 == 0),
+    "odd_numbers": tuple(n for n in numbers if n % 2 != 0),
+    "number_of_even_numbers": len(list(n for n in numbers if n % 2 == 0)),
+    "number_of_odd_numbers": len(list(n for n in numbers if n % 2 != 0))}
 
 if "__name__" == "__main__":
     pass
