@@ -29,7 +29,7 @@ def find_odd_pairs(numbers):
     then return a list of tuples with the pairs' index numbers 
     ie: [1,3,5] returns [(1,2)]
     """
-    pass
+    return [(n,n+1) for n in range(len(numbers)-1) if (numbers[n] + numbers[n+1]) % 2 != 0]
 
 def find_number_of_even_numbers(numbers):
     """Find the total number of even numbers in the list 'numbers' and return 
